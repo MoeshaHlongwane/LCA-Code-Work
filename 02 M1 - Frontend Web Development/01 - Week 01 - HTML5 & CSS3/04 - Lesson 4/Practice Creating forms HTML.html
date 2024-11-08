@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+<body><!--All the viewable content inside a broswer-->
+    <h1>HTML Forms</h1>
+    <form>
+    
+        <label for="Username">Enter username:</label><!--We use the label tag to link the input with the id "username" to the text-->
+        <input type="text" id="Username" name="username" placeholder="username" required><!--What we are saying here is we are expecting some kind of a text from a user, like a username-->
+        <!--The name tag also can be used to group items, that have the same name attribute-->
+        <br>
+        <br>
+        <label for="email">Please enter email address:</label>
+        <input type="email" id="email" name="email" placeholder="email"><!--Adding the name="" tag is a good practice-->
+        <br><br>
+        <label for="password">Please Enter password:</label>
+        <input type="password" id="password" name="password" placeholder="password"><!--Here we are telling the computer to hid the type of information that the user is going to type, because it is a password-->
+
+        <!--GROUPING EVERYTHING TOGETHER USING THE NAME ATTRIBUTE-->
+        <p>Please select your age:</p> <!--This is an example of using the name tag to group everything that are the same, this will allow the user to choose between options-->
+        <input type="radio" name="age" value="0-25" id="option-1"><!--The type of data is known as radio-->
+        <label for="option-1">0-26</label>
+        <br>
+        <input type="radio" name="age" value="26-35" id="option-2">
+        <label for="option-2">26-35</label>
+        <br>
+        <input type="radio" name="age" value="36-45" id="option-3">
+        <label for="option-3">36-45</label>
+        <br>
+        <input type="radio" name="age" value="46-55"id="option-4"><!--The value tag is for the computer to process-->
+        <label for="option-4">46-55</label><!--The label tag is just for the user to see of their screen-->
+        <br><br>
+        <!--(A DROP DOWN BOX) NOW WE GOING TO CREATE A TAB THAT ALLOWS THE USER TO SELECT WHICH KIND OF INFORMATION THAT MUST BE DISPLAYED ON SCREEN--->
+        <!--We must use a select tag and option tag-->
+        <label for="question">Security Question:</label>
+        <select name="question" id="question">
+            <option value="q1">What is your favourite gum flavor? </option>
+            <option value="q2">What is the name of the primary you studied at?</option>
+            <option value="q3">Who was your favourite teacher in high school?</option>
+            <option value="q4">If you were a vegetable, what would you be?</option>
+        </select>
+        <br><br>
+        <label for="answer">Security questions answer:</label>
+        <input type="text" id="answer" name="answer">
+
+        <br><br>
+        <label for="bio">Your bio...</label><br><!--Providing a box a user can put information in.-->
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="About you..."></textarea>
+        <!---The placeholder attribute gives you a hint of that to write. It is not real text...-->
+        <br><br>
+        <input type="submit" value="Submit the form.">
+    </form>
+</body>
+</html>

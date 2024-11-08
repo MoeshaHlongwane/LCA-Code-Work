@@ -1,0 +1,121 @@
+/* General styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input{
+    display: none;
+   
+}
+/* styling for body */
+body {
+    background-color: rgb(90, 89, 38);
+    max-width: 100%;
+}
+span h3{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(49, 191, 49);
+}
+/* the main secting */
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+    position: relative;
+    margin: 50px 0;
+    font-style: oblique;
+    text-shadow: 1px 3px 4px black;
+    box-shadow: 10px ;
+    color: rgb(191, 191, 35);
+  
+}
+/* top content styling */
+
+.top-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: rgb(110, 110, 46);
+    border-radius: 5px;
+    box-shadow: 8px 3px 4px yellow;
+
+}
+
+.top-content:hover{
+    transition: transform 0.10s ease-in-out;
+}
+
+label {
+    cursor: pointer;
+    font-size: 19px;
+    transition: color 0.3s;
+}
+/* label hovering */
+label:hover {
+    color: yellow;
+    text-decoration: underline;
+    
+}
+/* the layout styling */
+.photo-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid yellow;
+    transition: transform 0.1s ease-in-out;
+
+}
+.description:hover{
+    transition: translate(-10px);
+    transform: scale(1.05);
+}
+
+
+
+.image {
+    position: relative;
+    border-radius: 2px solid yellow;
+    overflow: hidden;
+    box-shadow: 5px 3px 4px black;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border: 1px solid rgb(107, 28, 28);
+    transition: transform 0.10s ease-in;
+    border: 5px solid rgb(134, 134, 50);
+}
+
+.image:hover img {
+    transition: translate(-10px);
+    transform: scale(1.05);
+}
+/* media setting, for different screens */
+@media (max-width: 768px) {
+    .photo-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .photo-cards {
+        grid-template-columns: 1fr;
+    }
+}
+p{
+   margin: auto;
+}

@@ -1,0 +1,10 @@
+.gallery{
+    display: inline-block;
+    border: 1px solid black;
+    margin: 5px;
+    width: 200px;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+}

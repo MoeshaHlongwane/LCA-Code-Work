@@ -1,0 +1,54 @@
+/* navigation bar styling */
+main{
+    margin: 50px;
+    word-spacing: 5px;
+}
+.navbar ul{
+   
+    list-style-type: none;
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    overflow: hidden;
+    top: 10;
+    justify-content: space-evenly;
+    display: flex;
+            
+}
+article {
+    width: 800px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+    list-style-type: none;
+    margin: auto;
+}
+.headings{
+    color: #2c3e50;    
+}
+.article_2{
+    border: #333 solid 2px;
+    background-color: grey;
+}
+
+.article_3{
+    border: #333  solid 2px;
+    box-shadow: 5px ;
+    background-color: grey;
+}
+
+h1{
+    font-size: 24px;
+}
+h2{
+    font-size: 20px;
+}
+
+.navbar ul:hover{
+   color: #3498db;
+   list-style-type: none;
+   text-decoration: underline;
+ 
+     
+}
+

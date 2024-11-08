@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Form</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>To Contact Us Fill This Form</h1>
+    </header>
+
+    <div class="Contact">
+
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="#" method="POST">
+
+                <!--Name-->
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <!--Email-->
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <!--phone-->
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone">
+
+                <!--Use the select tag-->
+                <!--subject-->
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject" required>
+                    <option value="general">General Inquiry</option>
+                    <option value="appointment">Appointment</option>
+                    <option value="support">Support</option>
+                </select>
+                <!--message-->
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <br><br>
+
+        <!-- Schedule Table Section -->
+        <section class="schedule-table">
+            <h2>Available Appointment Times</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Available Slots</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>9:00 AM - 11:00 AM</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>1:00 PM - 3:00 PM</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>10:00 AM - 12:00 PM</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>2:00 PM - 4:00 PM</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>11:00 AM - 1:00 PM</td>
+                        <td>6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+</body>
+</html>
+
+
+  

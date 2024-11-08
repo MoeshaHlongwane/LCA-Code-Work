@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Forms</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <title>Execise 4</title>
+    <style>
+        body{
+            border-width: 2px solid black;
+            border: 9px solid black;
+            padding: 20px;
+            border-radius: 5px;
+            max-width: 500px;
+            margin: 0 auto;
+            align-content: center;
+        }    
+    </style>
+
+    <body>
+        <h1><u>Fill this form </u></h1>
+
+        <!--Creating a form-->
+        <form method="post" action="https://formspree.io/f/xpwzpzrd" >
+            <!--first name-->
+            <label for="first_name">First Name:</label>
+            <input type="text" name="first_name" placeholder="Candice" >
+            <br><br>
+
+            <!--Last name-->
+            <label for="last_name">Last Name:</label>
+            <input type="last_name" name="last_name" placeholder="Amon">
+            <br><br>
+
+            <!--Gender-->
+            <label for="gender">Select your gender: </label>
+            <br><br>
+            <input type="radio" name="gender" value="Female" required>
+            <label for="gender">Female</label>
+            <br><br>
+
+            <input type="radio" name="gender" value="Female">
+            <label for="gender">Male</label>
+            <br><br>
+            
+            <input type="radio" name="gender" value="Female">
+            <label for="gender">Others</label>
+            <br><br>
+
+            <!--Date of birth-->
+            <label for="date_of_birth">Date of birth:</label>
+            <input type="date" name="date_of_birth">
+            <br><br>
+
+            <!--Email--->
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="candiceamon@gmail.com">  
+            <br><br>
+            <button>Click to Submit Form Here</button>
+              
+        </form>
+        
+        <br><br>
+        <form method="get" action="http://httpbin.org/get">
+        <label for="search">Search Name:</label>
+        <input type="search" name="search_name"> 
+        <br><br>
+        <button>Click to Search Name </button>
+        </form>
+
+    </body>
+
+</html>
