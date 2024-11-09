@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <!-- Linking Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+      /* Earthy Feel and Centered Form */
+      body {
+        background-color: #F4F1DE;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        background-color: #8D8741;
+      }
+
+      .navbar .nav-link {
+        color: #FBEEC1 !important;
+      }
+
+      h3 {
+        color: #8D8741;
+        text-align: center;
+
+      }
+      h1
+      {
+        font-size: 20px;
+        color: #8D8741;
+        text-align: center;
+
+      }
+
+      /* Form Styling */
+      form {
+        max-width: 500px;
+        margin: auto;
+        padding: 20px;
+        background-color: #EAE7DC;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      label {
+        color: #333;
+      }
+
+      input, button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 8px;
+        margin-bottom: 16px;
+        border: none;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #8D8741;
+        color: white;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      button:hover {
+        background-color: #B3A394;
+      }
+
+      /* Slide-in Animation for h3 */
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateX(-100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      #contact-heading {
+        animation: slideIn 1s ease;
+      }
+    </style>
+
+    <script>
+      // Slide-in animation for h3 after page load
+      window.onload = function() {
+        document.getElementById('contact-heading').style.opacity = 1;
+      };
+    </script>
+  </head>
+
+  <body>
+    <nav>
+    <!-- Navigation Bar -->
+    <ul id="navbar" class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="products.html">Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+    </ul>
+  </nav>
+    <!-- Page Content -->
+    <main>
+      <h3 id="contact-heading">Contact Us</h3>
+      <h1>Fill this Form</h1>
+
+      <!-- Contact Form -->
+      <form method="post" action="https://formspree.io/f/xpwzpzrd">
+        <!-- First Name -->
+        <label for="first_name">First Name:</label>
+        <input type="text" name="first_name" placeholder="Moesha" required>
+
+        <!-- Last Name -->
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" placeholder="Hlongwane" required>
+
+        <!-- Complaint Type -->
+        <label for="complaints">Select your Complaint:</label>
+        <input type="radio" name="complaints" value="stock" required> Product is out of stock
+        <br>
+        <input type="radio" name="complaints" value="not_resolved"> Issue not resolved on first call
+        <br>
+        <input type="radio" name="complaints" value="defective_product"> Broken/defective product
+        <br>
+        <input type="radio" name="complaints" value="others"> Others
+
+        <!-- Date of Purchase -->
+        <label for="date_of_purchase">Date of Purchase:</label>
+        <input type="date" name="date_of_purchase" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" name="email" placeholder="Nikiwehlongwane22@gmail.com" required>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit Form</button>
+      </form>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN6jIeHz" crossorigin="anonymous"></script>
+  </body>
+    <!-- Footer -->
+    <footer class="text-center">
+      <p>&copy; 2024 Your Gallery. All rights reserved.</p>
+      <p>
+        <a href="privacy-policy.html">Privacy Policy</a> |
+        <a href="terms-of-service.html">Terms of Service</a>
+      </p>
+    </footer>
+</html>
